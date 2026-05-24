@@ -30,13 +30,7 @@ export default function Header() {
         </h2>
 
         <div className="order-3 ml-auto flex w-full flex-wrap items-center gap-x-4 gap-y-1 pb-1 text-sm font-semibold sm:order-2 sm:w-auto sm:flex-nowrap sm:pb-0">
-          <Link
-            to="/"
-            className="text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
-            activeProps={{ className: 'text-zinc-900 dark:text-white' }}
-          >
-            Home
-          </Link>
+       
           {session && (
             <Link
               to="/dashboard"
@@ -46,21 +40,7 @@ export default function Header() {
               Dashboard
             </Link>
           )}
-          <Link
-            to="/about"
-            className="text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
-            activeProps={{ className: 'text-zinc-900 dark:text-white' }}
-          >
-            About
-          </Link>
-          <a
-            href="https://tanstack.com/start/latest/docs/framework/react/overview"
-            className="text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Docs
-          </a>
+        
         </div>
 
         <div className="order-2 ml-auto flex items-center gap-1.5 sm:order-3 sm:gap-2">
