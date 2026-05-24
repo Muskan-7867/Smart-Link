@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { db } from "db/db";
 import { links } from "db/schema";
-import { and, eq } from "drizzle-orm";
+import {  eq } from "drizzle-orm";
 import { z } from "zod";
 
 const schema = z.object({
